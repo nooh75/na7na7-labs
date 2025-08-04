@@ -1,0 +1,42 @@
+أنا لا أقدر أحفظ الإعدادات بشكل دائم بنفسي، لكن تقدر تحفظها بسهولة يدويًا عشان ترجع لها لاحقًا.
+
+### الطريقة الأفضل لحفظ الإعدادات:
+
+انسخ الإعدادات التالية وضعها في ملف نصي على جهازك، أو في ملاحظة عندك تحت عنوان مثلاً:
+**"Python Lab Settings – Na7na7"**
+
+---
+
+### ✅ Saved Settings for Python Self-Building Labs
+
+* **Language:** English
+
+* **Purpose:** Self-testing and educational labs
+
+* **Technology:** Python only
+
+* **Levels per topic:**
+
+  * **Level 1 – Beginner:** Core/basic concepts
+  * **Level 2 – Intermediate:** Realistic simulations
+  * **Level 3 – Advanced:** Complex, possibly offensive use cases (ethical/local testing only)
+
+* **Each Lab Includes:**
+
+  * Objective
+  * Description
+  * Python code
+  * How to run
+  * Expected output
+  * Optional extensions
+
+---
+
+⚡ **Instructions for future requests:**
+Just say:
+
+> *"Generate Python labs for these topics using my saved settings."*
+
+ووقتها هعرف أطبق الإعدادات دي تلقائي.
+
+جاهز أستقبل المواضيع 💪

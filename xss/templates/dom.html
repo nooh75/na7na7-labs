@@ -1,0 +1,8 @@
+<h2>DOM-Based XSS</h2>
+<p id="output"></p>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const text = params.get('text');
+    document.getElementById('output').innerHTML = text; // ⚠️ DOM XSS هنا
+</script>
+<a href="/">Back</a>

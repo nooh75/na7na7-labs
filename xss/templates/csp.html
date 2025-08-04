@@ -1,0 +1,7 @@
+<h2>🛡️ CSP XSS Test</h2>
+<form method="GET">
+    <input name="xss">
+    <input type="submit">
+</form>
+<div id="out">{{ request.args.get('xss', '') | safe }}</div>
+<a href="/">Back</a>

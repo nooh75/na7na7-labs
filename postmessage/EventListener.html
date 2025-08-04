@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Na7na7 XSS Challenge - Level 1</title>
+  </head>
+  <body>
+    <h1>Level 1 - postMessage XSS</h1>
+    <div id="output"></div>
+
+    <script>
+      window.addEventListener("message", function(event) {
+        if (event.data.type === "render") {
+          document.getElementById("output").innerHTML = event.data.content;
+        }
+      });
+    </script>
+  </body>
+</html>

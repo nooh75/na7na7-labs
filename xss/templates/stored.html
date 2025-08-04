@@ -1,0 +1,11 @@
+<h2>Stored XSS</h2>
+<form method="POST">
+    Comment: <input name="msg">
+    <input type="submit">
+</form>
+<ul>
+{% for c in comments %}
+    <li>{{ c[0] | safe }}</li>
+{% endfor %}
+</ul>
+<a href="/">Back</a>

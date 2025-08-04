@@ -1,0 +1,7 @@
+<h2>Reflected XSS</h2>
+<form method="POST">
+    Search: <input name="search">
+    <input type="submit">
+</form>
+<p>You searched for: {{data | safe}}</p>
+<a href="/">Back</a>

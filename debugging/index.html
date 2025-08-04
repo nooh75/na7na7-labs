@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Breakpoint Training</title>
+</head>
+<body>
+  <h1>Hello Na7na7 🧠</h1>
+  <button onclick="main()">Start Debug</button>
+  <pre id="out"></pre>
+
+  <script>
+    async function main() {
+      const name = getUserName();
+      const profile = await getUserProfile(name);
+      const summary = formatProfile(profile);
+      show(summary);
+    }
+
+    function getUserName() {
+      return "Na7na7";
+    }
+
+    async function getUserProfile(name) {
+      const res = await fetch(`https://jsonplaceholder.typicode.com/users?username=${name}`);
+      const data = await res.json();
+      return data[0];
+    }
+
+    function formatProfile(user) {
+      return `${user.name} | ${user.email} | ${user.website}`;
+    }
+
+    function show(text) {
+      document.getElementById("out").innerText = text;
+    }
+  </script>
+</body>
+</html>
